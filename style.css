@@ -4,7 +4,12 @@ body {
 }
 
 main {
-
+    background-image: url('./images/natural_brown_wood.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 46em;
 }
 
 footer {
@@ -52,7 +57,7 @@ footer {
     text-decoration: none;
 }
 
-#navBar a:hover, a:active {
+#navBar a:hover {
     color: white;
 }
 
@@ -62,6 +67,7 @@ footer {
     height: 100%;
     margin: auto;
     background-color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #heuresDiv ul {
@@ -76,4 +82,70 @@ footer {
     padding: 1em 0em 1em 0em;
     text-align: center;
     color: white;
+}
+
+#entries{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#mainDishes{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#desserts{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#sake{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#beer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+#drink{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    text-align: center;
+}
+
+div.gallery {
+    border: 2px solid #ccc;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0.5em 0.5em;
+    float: left;
+    width: 33.3%;
 }
