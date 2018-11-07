@@ -1,5 +1,8 @@
+/* Etudiants: Alexandre Julien 1012389 & Sam Chandavong 1004915 */
+
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
     margin: 0;
 }
 
@@ -9,11 +12,21 @@ main {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 46em;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
 }
 
 footer {
     background-color: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 #banner {
@@ -22,14 +35,13 @@ footer {
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    height: 46em;
+    height: 40em;
 }
 
 #bannerTitleWrapper {
     width: 50%;
-    padding-top: 23em;
+    padding-top: 20em;
     margin: auto;
-    color: white;
     text-align: center;
     text-shadow: 0.1em 0.1em 0 black;
 }
@@ -61,91 +73,70 @@ footer {
     color: white;
 }
 
-#mainText {
+.mainText {
     text-align: center;
     width: 60%;
     height: 100%;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em 1em;
+    overflow: auto;
+}
+
+#mainTextPropos p {
+    text-align: left;
+}
+
+.columnLeft {
+    float: left;
+    width: 33%;
+}
+
+.columnRight {
+    float: right;
+    width: 33%;
+}
+
+.columnCenter {
+    display: inline-block;
+    width: 33%;
+}
+
+#galleryWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 1em;
+}
+
+.gallery {
+    margin: 0.1em;
+    border: 2px solid #ccc;
     background-color: white;
-    font-family: 'Montserrat', sans-serif;
+    color: black;
+    float: left;
+    overflow: hidden;
+    width: 32.8%;
 }
 
-#heuresDiv ul {
-    padding: 0;
+.gallery img {
+    height: 8em;
 }
 
-#heuresDiv ul li {
-    display: block;
+#takoyaki, #porkRamen {
+    transform: rotate(180deg);
 }
 
 #footerText {
     padding: 1em 0em 1em 0em;
     text-align: center;
-    color: white;
 }
 
-#entries{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    text-align: center;
-}
-
-#mainDishes{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    text-align: center;
-}
-
-#desserts{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    text-align: center;
-}
-
-#sake{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    text-align: center;
-}
-
-#beer{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    text-align: center;
-}
-
-#drink{
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    text-align: center;
-}
-
-div.gallery {
-    border: 2px solid #ccc;
-}
-
-div.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-div.desc {
-    padding: 15px;
-    text-align: center;
+.desc {
+    padding: 1em;
 }
 
 * {
     box-sizing: border-box;
-}
-
-.responsive {
-    padding: 0.5em 0.5em;
-    float: left;
-    width: 33.3%;
 }
