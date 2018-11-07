@@ -4,29 +4,38 @@ body {
 }
 
 main {
-    text-align: center;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 
 footer {
     background-color: black;
 }
 
-.container {
-    width: 100%;
-}
-
 #banner {
-    background-image: url('./images/sushi_banner.jpg');
+    background-image: url('./images/japan_banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 46em;
 }
 
-#bannerName {
+#bannerTitleWrapper {
+    width: 50%;
+    padding-top: 23em;
+    margin: auto;
     color: white;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0 black;
 }
 
-#bannerName h1, h3 {
+#titleHighlighter {
+    background: rgba(0, 0, 0, 0.7);
+    display: inline-block;
+    padding: 1em;
+}
+
+#bannerTitleWrapper h1, h3 {
     margin: 0;
     padding: 0;
 }
@@ -45,6 +54,22 @@ footer {
 
 #navBar a:hover, a:active {
     color: white;
+}
+
+#mainText {
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    background-color: white;
+}
+
+#heuresDiv ul {
+    padding: 0;
+}
+
+#heuresDiv ul li {
+    display: block;
 }
 
 #footerText {
